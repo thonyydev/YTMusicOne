@@ -2,28 +2,49 @@
   "build": {
     "appId": "com.Thony.ytmusicone",
     "productName": "YT Music One",
+    "files": [
+      "main.js",
+      "preload.js",
+      "mini-player/**/*",
+      "settings/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
     "publish": [
       {
         "provider": "github",
-        "owner": "SEU_USUARIO",
-        "repo": "SEU_REPOSITORIO"
+        "owner": "thonyydev",
+        "repo": "YTMusicOne"
       }
-    ]
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "name": "ytmusicone",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "Thony",
   "license": "MIT",
   "description": "",
-  "dependencies": {
-    "electron": "^35.2.0"
-  },
   "devDependencies": {
+    "electron": "^35.2.0",
     "electron-builder": "^26.0.12",
     "electron-store": "^10.0.1"
   }
