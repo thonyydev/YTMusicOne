@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+
+# Electron build artifacts
+dist/
+out/
+release/
+build/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# dotenv/config files
+.env
+.env.*
+
+# Cache
+.cache/
+*.bak
+*.swp
+
+# Electron store data
+*.sqlite
+*.db
+electron-store.json

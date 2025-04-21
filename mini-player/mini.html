@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini Player</title>
+    <style>
+      body {
+        margin: 0;
+        background: #222;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      .titlebar {
+        height: 24px;
+        background: #333;
+        -webkit-app-region: drag;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 5px;
+      }
+
+      .close-btn {
+        -webkit-app-region: no-drag;
+        background: none;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0 6px;
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      button {
+        background: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .meta {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+      }
+
+      #title {
+        font-weight: bold;
+        color: #fff;
+      }
+
+      #artist {
+        color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titlebar">
+      <button class="close-btn" id="close">X</button>
+    </div>
+    <div class="info">
+      <div class="meta">
+        <div id="title">Título</div>
+        <div id="artist">Artista</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="playpause">⏯</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <script src="mini.js"></script>
+  </body>
+</html>

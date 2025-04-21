@@ -1,0 +1,30 @@
+{
+  "build": {
+    "appId": "com.Thony.ytmusicone",
+    "productName": "YT Music One",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "SEU_USUARIO",
+        "repo": "SEU_REPOSITORIO"
+      }
+    ]
+  },
+  "name": "ytmusicone",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Thony",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "electron": "^35.2.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12",
+    "electron-store": "^10.0.1"
+  }
+}

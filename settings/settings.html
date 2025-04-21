@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Configurações</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 8px;
+        color: #fff;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        background-color: #2a2a2a;
+        padding: 12px 16px;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+      }
+
+      label:hover {
+        background-color: #333;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 12px;
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #888;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Preferências</h2>
+
+    <label>
+      <input type="checkbox" id="minimizeToTray" />
+      Minimizar para a bandeja
+    </label>
+
+    <label>
+      <input type="checkbox" id="showNotifications" />
+      Mostrar notificações ao trocar de música
+    </label>
+
+    <!-- Aqui você pode adicionar mais checkboxes futuramente -->
+
+    <div class="footer">YouTube Music Client - Configurações</div>
+
+    <script src="settings.js"></script>
+  </body>
+</html>
